@@ -15,4 +15,4 @@ async def photo_link(photo: types.photo_size.PhotoSize) -> str:
             img_src = await response.json()
 
     link = 'https://telegra.ph/' + img_src[0]['src']
-    return link        
+    return link
